@@ -2,9 +2,9 @@
 
 module Toy
   module Commands
-    class Move < Command
+    class Left < Command
       self.arity = 0
-      self.command = "MOVE"
+      self.command = "LEFT"
     end
   end
 end

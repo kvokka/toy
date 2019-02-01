@@ -2,6 +2,7 @@
 
 require "toy/version"
 require "toy/parser"
+require "toy/robot"
 require "toy/command"
 
 Dir[File.join(__dir__, "toy", "commands", "*.rb")].each { |f| require f }
