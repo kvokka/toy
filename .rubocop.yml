@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 Layout/AlignHash:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
@@ -60,3 +62,5 @@ Style/SingleLineMethods:
   Enabled: false
 Metrics/BlockLength:
   ExcludedMethods: ['describe', 'context']
+AllCops:
+  TargetRubyVersion: 2.5
