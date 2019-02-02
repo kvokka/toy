@@ -7,6 +7,8 @@ rvm:
 env:
   global:
     - CC_TEST_REPORTER_ID=e9a82c7661360f0d079e985f9b9f5c445e4dde2027b6da24f1024bc0ec01ed0b
+    - COVERAGE=1
+    - TRAVIS_TEST_RESULT=simplecov
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
