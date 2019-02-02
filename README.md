@@ -1,5 +1,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8dcb628f71d94581b309d71da473e992)](https://app.codacy.com/app/kvokka/toy?utm_source=github.com&utm_medium=referral&utm_content=kvokka/toy&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/kvokka/toy.svg?branch=master)](https://travis-ci.org/kvokka/toy)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2d04cacf87448e9cba23/maintainability)](https://codeclimate.com/github/kvokka/toy/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/2d04cacf87448e9cba23/test_coverage)](https://codeclimate.com/github/kvokka/toy/test_coverage)
 
 ## Description
 
