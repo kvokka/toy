@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8dcb628f71d94581b309d71da473e992)](https://app.codacy.com/app/kvokka/toy?utm_source=github.com&utm_medium=referral&utm_content=kvokka/toy&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/kvokka/toy.svg?branch=master)](https://travis-ci.org/kvokka/toy)
 
 ## Description
