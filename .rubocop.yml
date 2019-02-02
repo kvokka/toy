@@ -24,7 +24,7 @@ Layout/EndAlignment:
 Layout/DefEndAlignment:
   AutoCorrect: true
 Rails:
-  Enabled: true
+  Enabled: false
 Style/AutoResourceCleanup:
   Description: 'Suggests the usage of an auto resource cleanup version of a method (if available).'
   Enabled: true
