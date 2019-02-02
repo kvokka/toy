@@ -3,6 +3,16 @@
 require "bundler/setup"
 require "toy"
 
+if ENV["COVERAGE"]
+  require "simplecov"
+  SimpleCov.command_name "RSpec"
+  SimpleCov.start
+  SimpleCov.at_exit do
+    @exit_status = 0
+    SimpleCov.result.format!
+  end
+end
+
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = ".rspec_status"
