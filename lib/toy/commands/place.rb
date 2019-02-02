@@ -8,6 +8,12 @@ module Toy
 
       attr_reader :direction, :x, :y
 
+      def action(robot)
+        robot.x = x
+        robot.y = y
+        robot.direction = direction
+      end
+
       def parse_arguments!
         raise Command::InvalidArguments unless super
         raise Command::InvalidArguments unless arguments.size == self.class.arity
@@ -18,6 +24,12 @@ module Toy
 
         @direction = arguments[2]
         true
+      end
+
+      private
+
+      def command_unsafe?(robot)
+        x > robot.max_x || y > robot.max_y || x.negative? || y.negative?
       end
     end
   end

@@ -43,9 +43,26 @@ module Toy
       @arguments = arguments.split ARGUMENTS_SEPARATOR
     end
 
+    def call(robot)
+      return robot if command_unsafe?(robot)
+
+      action(robot)
+      robot
+    end
+
+    def action(*)
+      raise NotImplemented
+    end
+
     def parse_arguments!
       raise InvalidArguments if self.class.arity.zero? && arguments && !arguments.empty?
 
+      true
+    end
+
+    protected
+
+    def command_unsafe?(*)
       true
     end
   end

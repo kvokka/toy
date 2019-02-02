@@ -35,7 +35,6 @@ RSpec.describe "Toy::Parser" do
     end
   end
 
-
   context "incorrect command arguments 2" do
     let(:cmd) { "PLACE 1,3,FOO REPORT" }
 
