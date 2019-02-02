@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "bundler/setup"
+require "toy"
+
+if ARGV.empty?
+  puts "Provide the command sequence for the robot as the argument, please"
+  exit 1
+end
+
+Toy::Robot.new(ARGV.join(" ")).call
