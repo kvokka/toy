@@ -26,7 +26,7 @@ module Toy
       list.each_with_index.each_with_object([]) do |(el, i), acc|
         next acc unless el
 
-        klass = Command.registry[el] or raise Command::NotCommandError
+        klass = Command.registry[el] or raise NotImplemented, el
 
         yield list, klass, i, acc
         acc.last.parse_arguments!

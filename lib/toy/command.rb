@@ -4,12 +4,6 @@ module Toy
   class Command
     ARGUMENTS_SEPARATOR = ","
 
-    class NotCommandError < StandardError
-      def initialize(*)
-        super "Do not respond to method ::command"
-      end
-    end
-
     class InvalidArguments < StandardError; end
 
     class << self
