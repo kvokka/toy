@@ -7,8 +7,7 @@ module Toy
       self.command = "RIGHT"
 
       def action(robot)
-        i = (Robot::DIRECTIONS.index(robot.direction) + 1) % Robot::DIRECTIONS.size
-        robot.direction = Robot::DIRECTIONS[i]
+        robot.direction = robot.look_around :right
       end
 
       private

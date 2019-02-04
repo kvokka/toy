@@ -19,5 +19,13 @@ module Toy
         command.call(self)
       end
     end
+
+    def look_around(to = :enter_direction)
+      i = DIRECTIONS.index(direction)
+      case to.to_sym
+      when :left then Robot::DIRECTIONS[(i - 1) % DIRECTIONS.size]
+      when :right then Robot::DIRECTIONS[(i + 1) % DIRECTIONS.size]
+      end
+    end
   end
 end

@@ -15,13 +15,12 @@ module Toy
       end
 
       def parse_arguments!
-        raise Command::InvalidArguments unless super
-        raise Command::InvalidArguments unless arguments.size == self.class.arity
+        raise Command::InvalidArguments unless super &&
+                                               arguments.size == self.class.arity &&
+                                               Robot::DIRECTIONS.include?(arguments[2])
 
-        @x = Integer arguments[0]
-        @y = Integer arguments[1]
-        raise Command::InvalidArguments unless Robot::DIRECTIONS.include?(arguments[2])
-
+        @x = Integer(arguments[0])
+        @y = Integer(arguments[1])
         @direction = arguments[2]
         true
       end
